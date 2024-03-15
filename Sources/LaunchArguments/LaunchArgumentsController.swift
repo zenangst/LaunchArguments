@@ -1,6 +1,6 @@
 import Foundation
 
-public class LaunchArgumentsController<T: LaunchArgumentType> {
+public class LaunchArgumentsController<T: LaunchArgumentType>: @unchecked Sendable {
   private var storage = Set<T>()
 
   public init(arguments: [String] = CommandLine.arguments) {
