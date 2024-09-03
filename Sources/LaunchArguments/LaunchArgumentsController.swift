@@ -19,6 +19,6 @@ public class LaunchArgumentsController<T: LaunchArgumentType>: @unchecked Sendab
   }
 
   public func isEnabled(_ launchArgument: T) -> Bool {
-    return storage.contains(launchArgument)
+    storage.contains(launchArgument)
   }
 }
